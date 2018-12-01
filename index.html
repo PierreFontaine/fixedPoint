@@ -8,13 +8,78 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Fixed point tool</title>
 </head>
 <body>
-<h1>Hello, world!</h1>
+    <div class="container">
+        <div class="row">
+            <h1>Fixed point converter</h1>
+        </div>
+        <!-- FIXED POINT CONF -->
+        <div class="row">
+            <h4>Fixed point configuration</h4>
+        </div>
+        <div class="row">
+            <div class="col-sm">Signe</div>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <div class="col-sm">
+                <div class="input-group mb-3">
+                    <input type="number" min="0">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">Partie Entiere</div>
+            <div class="col-sm">
+                <div class="input-group mb-3">
+                    <input type="number" min="0">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">Partie Flottante</div>
+            <div class="col-sm">
+                <div class="input-group mb-3">
+                    <input type="number" min="0">
+                </div>
+            </div>
+        </div>
+        <!-- FIXED POINT CONF -->
+        <div class="row">
+            <h4>Decimal value to convert</h4>
+        </div>
+        <div class="row">
+            <div class="col-sm">decimal value</div>
+
+            <div class="col-sm">
+                <div class="input-group mb-3">
+                    <input type="number">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="input-group mb-3">
+                    <button type="button" class="btn btn-primary">Process</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- resultat -->
+        <div class="row">
+            <h4>Resultat</h4>
+        </div>
+        <div class="row">
+            <div class="col-sm">Resultat en binaire</div>
+
+            <div class="col-sm">
+                <div class="input-group mb-3">
+                    <input type="number">
+                </div>
+            </div>
+        </div>
+
+    </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
