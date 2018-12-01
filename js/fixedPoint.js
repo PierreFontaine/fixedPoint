@@ -11,6 +11,7 @@ let main = function(){
 
   let inpt_decimal = document.getElementById('decimal');
   let lbl_res = document.getElementById('res');
+  let lbl_res_hex = document.getElementById('res_hex');
 
   btn_process.addEventListener('click', function(){
     console.log(inpt_entiere.value);
@@ -63,6 +64,7 @@ let main = function(){
     console.log("virgule " + str_vir);
 
     lbl_res.innerHTML = res + str_ent + str_vir;
+    lbl_res_hex.innerText = "0x"+parseInt((res + str_ent + str_vir), 2).toString(16);
   });
 
 
