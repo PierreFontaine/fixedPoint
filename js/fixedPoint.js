@@ -19,9 +19,13 @@ let main = function(){
 
     let dec = inpt_decimal.value;
     let vir = inpt_virgule.value;
+    let ent = inpt_entiere.value;
 
     let res = "";
+    let str_ent = "";
     let str_vir = "";
+
+    //signe
 
     if (dec > 0) {
       res = res + "0";
@@ -29,6 +33,20 @@ let main = function(){
       res = res + "1";
     }
 
+    let partie_entiere = Math.floor(dec);
+    for (let i = 0; i < ent; i++) {
+      let r = partie_entiere % 2;
+      partie_entiere = Math.floor(partie_entiere / 2);
+      if (r === 1) {
+        str_ent = "1" + str_ent;
+      } else {
+        str_ent = "0" + str_ent;
+      }
+    }
+
+
+    // partie virgule
+    dec = dec - Math.floor(dec);
     for (let i = 0; i<vir; i++) {
       console.log(dec);
       dec = dec * 2;
@@ -40,14 +58,11 @@ let main = function(){
       }
     }
 
-    str_vir = str_vir.split("").reverse().join("");
-
-
-
     console.log("signe " + res);
+    console.log("entiere " + str_ent);
     console.log("virgule " + str_vir);
 
-    lbl_res.innerHTML = res + str_vir;
+    lbl_res.innerHTML = res + str_ent + str_vir;
   });
 
 
